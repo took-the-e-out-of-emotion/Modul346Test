@@ -1,0 +1,28 @@
+Linux
+
+sudo apt-get update 
+
+sudo apt-get install openssh-server 
+
+sudo systemctl start ssh
+
+sudo systemctl enable ssh 
+
+
+Windows
+
+ssh-keygen 
+
+type C:\Users\vmadmin.ssh\id_rsa.pub | ssh vmadmin@192.168.210.22 "mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys" 
+
+ssh vmadmin@192.168.210.22
+
+
+
+5. Auf Linux prüfen 
+
+cd ~/.ssh 
+
+ls -la → .ssh und authorized_keys prüfen 
+
+cat authorized_keys → Public Key sehen 
