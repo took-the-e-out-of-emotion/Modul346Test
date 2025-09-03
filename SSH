@@ -1,21 +1,23 @@
 Linux
 
-sudo apt-get update 
+IP herausfinden
 
-sudo apt-get install openssh-server 
+Paketlisten aktualisieren: sudo apt-get update 
 
+SSH-Server installieren: sudo apt-get install openssh-server 
+
+SSH-Server starten & aktivieren: 
 sudo systemctl start ssh
-
 sudo systemctl enable ssh 
 
 
 Windows
 
-ssh-keygen 
+1. ssh-keygen 
 
-type C:\Users\vmadmin.ssh\id_rsa.pub | ssh vmadmin@192.168.210.22 "mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys" 
+2. Public Key übertragen: type C:\Users\vmadmin.ssh\id_rsa.pub | ssh vmadmin@192.168.210.22 "mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys" 
 
-ssh vmadmin@192.168.210.22
+3. Verbindnug testen: ssh vmadmin@192.168.210.22
 
 
 
@@ -26,3 +28,10 @@ cd ~/.ssh
 ls -la → .ssh und authorized_keys prüfen 
 
 cat authorized_keys → Public Key sehen 
+
+
+
+Zusatz: 
+
+ssh-keygen -b 4096 
+-b 4096 → legt die Schlüssellänge auf 4096 Bit fest (stärkerer, sichererer Schlüssel). 
