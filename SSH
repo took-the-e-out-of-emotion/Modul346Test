@@ -35,3 +35,69 @@ Zusatz:
 
 ssh-keygen -b 4096 
 -b 4096 → legt die Schlüssellänge auf 4096 Bit fest (stärkerer, sichererer Schlüssel). 
+
+
+
+Navigation & Verzeichnisse
+
+  ls → Verzeichnisinhalt anzeigen
+
+  ls -l → detaillierte Liste
+
+  ls -a → auch versteckte Dateien anzeigen
+
+  cd <verzeichnis> → Verzeichnis wechseln
+
+  pwd → aktuelles Verzeichnis anzeigen
+
+  mkdir <name> → neues Verzeichnis erstellen
+
+  rmdir <name> → leeres Verzeichnis löschen
+
+📄 Dateien erstellen & verwalten
+
+  touch datei.txt → leere Datei erstellen (oder Zeitstempel ändern)
+
+  cp quelle ziel → Datei(en) kopieren
+
+  rm datei.txt → Datei löschen
+
+  rm -r verzeichnis/ → Verzeichnis samt Inhalt löschen
+
+📖 Inhalte anzeigen
+
+  cat datei.txt → Datei-Inhalt komplett anzeigen
+
+  less datei.txt → Inhalt seitenweise anschauen (mit Pfeiltasten scrollen)
+
+  head -n 10 datei.txt → erste 10 Zeilen anzeigen
+
+  tail -n 10 datei.txt → letzte 10 Zeilen anzeigen
+
+  tail -f logfile.log → Datei „live“ verfolgen (z. B. Logdateien)
+
+🔤 Zeichen & Text bearbeiten
+
+  tr 'a' 'b' < datei.txt → ersetzt alle a durch b
+
+  tr -s 'b' < datei.txt → doppelte b zusammenfassen
+
+  grep "wort" datei.txt → sucht nach Text in Datei
+  
+  wc datei.txt → zählt Zeilen, Wörter, Zeichen
+
+  sort datei.txt → sortiert Zeilen
+
+  uniq datei.txt → doppelte Zeilen entfernen (nach sort)
+
+🔎 Suchen & Infos
+
+  find /home -name "test" → sucht im Verzeichnis /home nach Dateien/Ordnern mit dem Namen „test“
+
+  which befehl → zeigt den Pfad zu einem Befehl
+
+  man befehl → Handbuchseite zum Befehl öffnen (z. B. man ls)
+
+⚙️ Systeminfos & Prozesse
+
+  whoami → zeigt aktuellen Benutzer
