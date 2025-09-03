@@ -1,12 +1,12 @@
 Linux
 
-IP herausfinden
+1. IP herausfinden
 
-Paketlisten aktualisieren: sudo apt-get update 
+2. Paketlisten aktualisieren: sudo apt-get update 
 
-SSH-Server installieren: sudo apt-get install openssh-server 
+3. SSH-Server installieren: sudo apt-get install openssh-server 
 
-SSH-Server starten & aktivieren: 
+4. SSH-Server starten & aktivieren: 
 sudo systemctl start ssh
 sudo systemctl enable ssh 
 
